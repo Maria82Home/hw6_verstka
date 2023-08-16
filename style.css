@@ -32,6 +32,10 @@
      gap: 41px;
  }
 
+ .Header_right_picture_mobile{
+    display: none;
+ }
+
  .Top {
      background-color: #F1E4E6;
      display: grid;
@@ -72,12 +76,20 @@
      display: none;
  }
 
+ .brand_mobile{
+    display: none;
+ }
+
  .img_desktop {
      display: block;
  }
 
  .img_tablet {
      display: none;
+ }
+ 
+ .img_mobile {
+    display: none;
  }
 
  .offers_table {
@@ -204,6 +216,10 @@
          width: 283px;
      }
 
+     .brand_mobile{
+        display: none;
+     }
+
      .img_desktop {
          display: none;
      }
@@ -211,6 +227,10 @@
      .img_tablet {
          display: block;
      }
+
+     .img_mobile {
+        display: none;
+    }
 
      .offers_table {
          display: grid;
@@ -244,4 +264,98 @@
 
 
 
+ }
+
+ @media (max-width: 767px){
+
+
+    .Header_right_picture{
+        display: none;
+    }
+
+    .Header_right_picture_mobile{
+        display: block;
+    }
+    
+    .Top {
+        background-color: #F1E4E6;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: 375px;
+        grid-template-rows: 363px;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 5%;
+    }
+
+    .Top_image{
+        display: none;
+    }
+
+    .Top_image_tablet{
+        display: none;
+    }
+
+    .rect {
+        width: 12px;
+        height: 61px;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .brand_tablet {
+        display: none;
+    }
+
+    .brand_mobile{
+        display: block;
+        width: 236;
+    }
+
+    .Top_right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        padding-left: 15%;
+    }
+
+    .offers_table {
+        display: flex;
+        flex-direction: column;
+        margin-left: calc(50% - 171px);
+        margin-right: calc(50% - 171px); 
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    .img_desktop {
+        display: none;
+    }
+   
+    .img_tablet {
+        display: none;
+    }
+    
+    .img_mobile {
+       display: block;
+       width: 343px;
+    }
+
+    .offer4 {
+        width: 343px;
+    }
+
+
+    .items_table {
+        width: 358px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        margin-left: calc(50% - 179px); 
+        margin-right: calc(50% - 179px);
+    }
  }
